@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dado Selector</title>
+</head>
+<body>
+
+    <h1>Dado Selector</h1>
+
+    <label for="diceSelector">Seleziona il tipo di dado:</label>
+    <select id="diceSelector">
+        <option value="2">D2</option>
+        <option value="3">D3</option>
+        <option value="4">D4</option>
+        <option value="6">D6</option>
+        <option value="8">D8</option>
+        <option value="10">D10</option>
+        <option value="12">D12</option>
+        <option value="20">D20</option>
+        <option value="100">D100</option>
+    </select>
+
+    <button onclick="rollDice()">Lancia il dado</button>
+
+    <label for="result">Risultato:</label>
+    <input type="text" id="result" readonly>
+
+    <br><br>
+
+    <h2>Tabella MD - Tipologia di Ambiente</h2>
+
+  <table>
+  <thead>
+    <tr>
+      <th>ID Ambiente</th>
+      <th>Tipologia di Ambiente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Salone</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Biblioteca</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Cripta</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Pozzo</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Laboratorio</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Ambienti da Interni</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Caverna</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Ponte</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Forgia</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Labirinto</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Cella</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Tempio</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Antro</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Pozza</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Camera</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Stanza</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Salone</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Passaggio</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Biblioteca</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Arena</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Altare</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Corridoio</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Grotta</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Salone</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Armadio</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Ambienti da Interni</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>Pozzo Magico</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>Sotterraneo</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>Cripta Antica</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>Salone</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>Tempio Oscuro</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>Sala</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>Camminamento Aereo</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>Covo</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>Stanza Segreta</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>Pozzo di Luce</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>Laboratorio Oscuro</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>Sacello</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>Prigione</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>Fossa</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>Arena delle Ombre</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>Stanza Abbandonata</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>Cunicolo</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>Sala dei Trofei</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>Ambienti da Interni</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>Pozzo Senza Fine</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>Altare</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>Spelonca</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>Cripta Maledetta</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>Oratorio</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>Sala del Tesoro</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>Laboratorio Alchemico</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>Corridoio Oscuro</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>Sala</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>Caverna dei Cristalli</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>Ponte Sospeso</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>Sala</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>Tempio Nascosto</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>Tunnel</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>Portico</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>Labirinto di Illusioni</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>Cella di Tortura</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>Anfiteatro</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>Sala</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>Cripta delle Anime</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>Fornace</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>Pozzo Infuocato</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>Oracolo</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>Panteon</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>Refettorio</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>Armeria</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>Biblioteca Segreta</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>Gilda</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td>Labirinto Divino</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>Galleria delle Visioni</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>Cripta Segreta</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>Scriptorium</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>Altare Oscuro</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>Stanza delle Ombre</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>Aula del Giudizio</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>Torre delle Anime</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>Sacello Oscuro</td>
+    </tr>
+    <tr>
+      <td>83</td>
+      <td>Cripta Sacra</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td>Sala delle Profezie</td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td>Pozza di Melma Corrosiva</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>Sancta Sanctorum</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td>Sala delle Maledizioni</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>Altare Profano</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>Sala delle Tenebre</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td>Nartece</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td>Sacello Profano</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td>Camera Segreta</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td>Pozza di Veleno</td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td>Via delle Streghe</td>
+    </tr>
+    <tr>
+      <td>95</td>
+      <td>Gabinetto Magico</td>
+    </tr>
+    <tr>
+
+    <table>
+  <thead>
+    <tr>
+      <th>ID Complemento</th>
+      <th>Complemento di Specificazione</th>
+      <th>Descrizione</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td>del Re</td>
+      <td>Una sala ornata con il trono del monarca.</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>dell'Alchimista</td>
+      <td>Un laboratorio ricco di pozioni e attrezzature alchemiche.</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>dei Cavalli</td>
+      <td>Un ampio ambiente con stalle e cavalli.</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>delle Torture</td>
+      <td>Una stanza oscura, con attrezzi di tortura e atmosfera sinistra.</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>degli Elementi</td>
+      <td>Un luogo che incarna i quattro elementi: terra, acqua, aria e fuoco.</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>del Drago</td>
+      <td>Una caverna imponente con un nido di drago.</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>delle Ombre</td>
+      <td>Un'area dominata dalle ombre e dai misteri.</td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>degli Antichi</td>
+      <td>Una cripta che racchiude segreti degli antichi.</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>dell'Illusione</td>
+      <td>Un ambiente dove l'illusione confonde la realtà.</td>
+    </tr>
+    <tr>
+      <td>J</td>
+      <td>dei Tesori</td>
+      <td>Una sala colma di tesori e ricchezze.</td>
+    </tr>
+    <tr>
+      <td>K</td>
+      <td>delle Anime</td>
+      <td>Un luogo sacro che custodisce anime perdute.</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td>dei Segreti</td>
+      <td>Una stanza celata con segreti insondabili.</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>del Mistero</td>
+      <td>Un ambiente avvolto nel mistero e nell'incertezza.</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>della Magia</td>
+      <td>Un luogo intriso di potenti energie magiche.</td>
+    </tr>
+    <tr>
+      <td>O</td>
+      <td>dell'Oracolo</td>
+      <td>Uno spazio dedicato alla consultazione dell'oracolo.</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>del Profeta</td>
+      <td>Una sala dove un profeta predice il futuro.</td>
+    </tr>
+    <tr>
+      <td>Q</td>
+      <td>delle Profezie</td>
+      <td>Un ambiente che conserva antiche profezie.</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>delle Rune</td>
+      <td>Una stanza incisa con potenti rune magiche.</td>
+    </tr>
+    <tr>
+      <td>S</td>
+      <td>del Sacrificio</td>
+      <td>Un luogo dove si compiono sacrifici rituali.</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>delle Trappole</td>
+      <td>Una sala ingegnosamente traboccante di trappole.</td>
+    </tr>
+    <tr>
+      <td>U</td>
+      <td>dell'Ubriaco</td>
+      <td>Un locale frequentato da avventurieri ubriachi.</td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>delle Visioni</td>
+      <td>Una stanza in cui si manifestano visioni mistiche.</td>
+    </tr>
+    <tr>
+      <td>W</td>
+      <td>del Web</td>
+      <td>Un ambiente ispirato al mondo virtuale del web.</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>degli Xenomorfi</td>
+      <td>Un luogo infestato da creature aliene.</td>
+    </tr>
+    <tr>
+      <td>Y</td>
+      <td>dello Yin e Yang</td>
+      <td>Una sala che rappresenta l'equilibrio tra opposti.</td>
+    </tr>
+    <tr>
+      <td>Z</td>
+      <td>dello Zen</td>
+      <td>Un ambiente tranquillo e armonioso, ispirato allo zen.</td>
+    </tr>
+    <tr>
+      <td>AA</td>
+      <td>dell'Alba</td>
+      <td>Un luogo che riflette la bellezza dell'alba.</td>
+    </tr>
+    <tr>
+      <td>AB</td>
+      <td>dell'Abisso</td>
+      <td>Una stanza oscura che evoca l'abisso dell'oltretomba.</td>
+    </tr>
+    <tr>
+      <td>AC</td>
+      <td>dell'Accademia</td>
+      <td>Un'area dedicata alla conoscenza e all'apprendimento.</td>
+    </tr>
+    <tr>
+      <td>AD</td>
+      <td>dell'Addormentato</td>
+      <td>Un ambiente dove regna il sonno eterno.</td>
+    </tr>
+    <tr>
+      <td>AE</td>
+      <td>dell'Albero</td>
+      <td>Una sala circondata da maestosi alberi.</td>
+    </tr>
+    <tr>
+      <td>AF</td>
+      <td>dell'Affermazione</td>
+      <td>Uno spazio che ispira sicurezza e affermazione.</td>
+    </tr>
+    <tr>
+      <td>AG</td>
+      <td>dell'Agonia</td>
+      <td>Un luogo pervaso da un senso di agonia e sofferenza.</td>
+    </tr>
+    <tr>
+      <td>AH</td>
+      <td>dell'Alleanza</td>
+      <td>Una sala in cui le alleanze vengono siglate.</td>
+    </tr>
+    <tr>
+      <td>AI</td>
+      <td>dell'Amuleto</td>
+      <td>Una stanza che ospita un antico amuleto magico.</td>
+    </tr>
+    <tr>
+      <td>AJ</td>
+      <td>dell'Angelo</td>
+      <td>Un ambiente celestiale popolato da angeli.</td>
+    </tr>
+    <tr>
+      <td>AK</td>
+      <td>dell'Apocalisse</td>
+      <td>Un luogo che evoca la fine del mondo.</td>
+    </tr>
+    <tr>
+      <td>AL</td>
+      <td>dell'Aracnide</td>
+      <td>Una stanza abitata da ragni e intrighi.</td>
+    </tr>
+    <tr>
+      <td>AM</td>
+      <td>dell'Armageddon</td>
+      <td>Un ambiente che suggerisce la fine dei tempi.</td>
+    </tr>
+    <tr>
+      <td>AN</td>
+      <td>dell'Anima</td>
+      <td>Un luogo in cui si sperimenta la pura essenza dell'anima.</td>
+    </tr>
+    <tr>
+      <td>AO</td>
+      <td>dell'Armonia</td>
+      <td>Una sala che trasmette un senso di armonia e bilanciamento.</td>
+    </tr>
+    <tr>
+      <td>AP</td>
+      <td>dell'Artefatto</td>
+      <td>Un ambiente contenente un potente artefatto magico.</td>
+    </tr>
+    <tr>
+      <td>AQ</td>
+      <td>dell'Architetto</td>
+      <td>Una stanza creativa e ispirata all'architettura.</td>
+    </tr>
+    <tr>
+      <td>AR</td>
+      <td>dell'Argento</td>
+      <td>Un ambiente decorato con splendenti ornamenti d'argento.</td>
+    </tr>
+    <tr>
+      <td>AS</td>
+      <td>dell'Ascesa</td>
+      <td>Una sala che simboleggia la crescita e l'ascesa.</td>
+    </tr>
+    <tr>
+      <td>AT</td>
+      <td>dell'Atlante</td>
+      <td>Un luogo ispirato al mitico Atlante.</td>
+    </tr>
+    <tr>
+      <td>AU</td>
+      <td>dell'Aurora</td>
+      <td>Una sala che evoca l'atmosfera dell'aurora.</td>
+    </tr>
+    <tr>
+      <td>AV</td>
+      <td>dell'Avventura</td>
+      <td>Un ambiente che invita all'avventura e all'esplorazione.</td>
+    </tr>
+    <tr>
+      <td>AW</td>
+      <td>dell'Avvoltoio</td>
+      <td>Una stanza associata all'avvoltoio e al ciclo della vita.</td>
+    </tr>
+    <tr>
+      <td>AX</td>
+      <td>dell'Axe</td>
+      <td>Un luogo caratterizzato dalla presenza di possenti asce.</td>
+    </tr>
+    <tr>
+      <td>AY</td>
+      <td>dell'Azione</td>
+      <td>Una sala intrisa di dinamismo e azione.</td>
+    </tr>
+    <tr>
+      <td>AZ</td>
+      <td>dello Zen</td>
+      <td>Un ambiente tranquillo e armonioso, ispirato allo zen.</td>
+    </tr>
+    <tr>
+      <td>BA</td>
+      <td>del Bacio</td>
+      <td>Un luogo romantico e avvolto dal mistero del bacio.</td>
+    </tr>
+    <tr>
+
+
+    <script>
+        function rollDice() {
+            // Ottieni il tipo di dado selezionato
+            var diceType = document.getElementById("diceSelector").value;
+
+            // Calcola il risultato del lancio del dado
+            var result = Math.floor(Math.random() * diceType) + 1;
+
+            // Mostra il risultato nella casella di testo
+            document.getElementById("result").value = result;
+        }
+    </script>
+
+</body>
+</html>
