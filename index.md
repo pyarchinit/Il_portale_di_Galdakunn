@@ -1,5 +1,3 @@
-# IL PORTALE DI GALDAKUNN
-
 <style>
   body {
     background-color: black;
@@ -7,6 +5,7 @@
   }
 </style>
 
+# IL PORTALE DI GALDAKUNN
 
 ![Alt Text](images/ilportale.png)
 
@@ -18,7 +17,7 @@ Risultato: <span id="result"></span>
 
 <script>
   document.getElementById("roll-button").addEventListener("click", function() {
-    var diceResult = Math.floor(Math.random() * 6) + 1;
+    var diceResult = Math.floor(Math.random() * 10) + 1;
     document.getElementById("result").textContent = diceResult;
   });
 </script>
