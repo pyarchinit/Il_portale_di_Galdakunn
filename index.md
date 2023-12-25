@@ -33,5 +33,4 @@ Risultato: <span id="result"></span>
 9. [Palazzo del Mago Nero (SCE9)](SCE9_Palazzo_del_Mago_Nero.md)
 10. [Caverna dei Draghi (SCE10)](SCE10_Caverna_dei_Draghi.md)
 
-
-[test area](test_area.md)
+##[test area](test_area.md)
