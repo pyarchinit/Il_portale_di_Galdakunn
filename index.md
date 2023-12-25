@@ -1,5 +1,13 @@
 # IL PORTALE DI GALDAKUNN
 
+<style>
+  body {
+    background-color: black;
+    color: white;
+  }
+</style>
+
+
 ![Alt Text](images/ilportale.png)
 
 # Lancio del dado
