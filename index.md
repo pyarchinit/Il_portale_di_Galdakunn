@@ -17,7 +17,7 @@ Risultato: <span id="result"></span>
 
 <script>
   document.getElementById("roll-button").addEventListener("click", function() {
-    var diceResult = Math.floor(Math.random() * ) + 1;
+    var diceResult = Math.floor(Math.random() * 10) + 1;
     document.getElementById("result").textContent = diceResult;
   });
 </script>
