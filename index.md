@@ -1,4 +1,19 @@
-# Indice
+# IL PORTALE DI GALDAKUNN
+
+![Alt Text](images/ilportale.png)
+
+# Lancio del dado
+
+<button id="roll-button">Lancia il dado</button>
+
+Risultato: <span id="result"></span>
+
+<script>
+  document.getElementById("roll-button").addEventListener("click", function() {
+    var diceResult = Math.floor(Math.random() * 6) + 1;
+    document.getElementById("result").textContent = diceResult;
+  });
+</script>
 
 1. [Bosco Incantato (SCE1)](SCE1-Bosco-incantato.md)
 2. [Antica Rovina (SCE2)](SCE2_Antica_Rovina.md)
