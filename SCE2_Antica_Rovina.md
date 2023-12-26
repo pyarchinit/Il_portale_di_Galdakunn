@@ -21,7 +21,7 @@
   }
 
   th {
-    background-color: white;
+    background-color: black;
     color: black;
   }
 </style>
