@@ -10,8 +10,6 @@
   table {
     width: 100%;
     background-color: black;
-    color: white;
-    border-collapse: collapse;
   }
 
   th, td {
