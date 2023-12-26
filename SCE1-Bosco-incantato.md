@@ -4,7 +4,8 @@
     color: white;
   }
 
-  table {
+  table  style="width:100%; background-color:black; color:white;"
+{
     width: 100%;
     background-color: black;
     color: white;
