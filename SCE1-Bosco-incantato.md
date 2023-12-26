@@ -4,27 +4,11 @@
     color: white;
   }
 
-  table  style="width:100%; background-color:black; color:white;"
-{
+
+table {
     width: 100%;
-    background-color: black;
-    color: white;
-  }
-
-  th, td {
-    border: 1px solid white;
-    padding: 8px;
-    text-align: left;
-  }
-
-  th {
-    background-color: black;
-    color: white;
-  }
-
-  tr {
-    background-color: black;
-    color: white;
+    background-color: transparent;
+    font-color: white;
   }
 
 
