@@ -22,6 +22,12 @@
     color: white;
   }
 
+  tr {
+    background-color: black;
+    color: white;
+  }
+
+
 </style>
 
 | ID_AMBIENTE | AMBIENTE                    |
