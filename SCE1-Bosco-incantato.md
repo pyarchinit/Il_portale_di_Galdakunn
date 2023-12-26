@@ -18,11 +18,11 @@
   }
 
   th {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
   }
-</style>
 
+</style>
 
 | ID_AMBIENTE | AMBIENTE                    |
 |-------------|-----------------------------|
@@ -36,3 +36,4 @@
 | AMB8        | Rovine Nascoste             |
 | AMB9        | Covo delle Creature Silvane |
 | AMB10       | Via delle Rune              |
+
