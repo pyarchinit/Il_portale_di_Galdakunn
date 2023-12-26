@@ -1,3 +1,10 @@
+<style>
+  body {
+    background-color: black;
+    color: white;
+  }
+</style>
+
 | ID_AMBIENTE | AMBIENTE                           |
 |-------------|------------------------------------|
 | AMB1        | Radura Magica                      |

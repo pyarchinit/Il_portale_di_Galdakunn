@@ -1,3 +1,11 @@
+<style>
+  body {
+    background-color: black;
+    color: white;
+  }
+</style>
+
+
 | ID_AMBIENTE | AMBIENTE                           |
 |-------------|------------------------------------|
 | AMB71       | Albero della Vita                  |
