@@ -4,6 +4,9 @@
     color: white;
   }
 
+</style>
+<style>
+
   table {
     width: 100%;
     background-color: black;
