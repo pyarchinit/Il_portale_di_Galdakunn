@@ -3,6 +3,24 @@
     background-color: black;
     color: white;
   }
+
+  table {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: white;
+    color: black;
+  }
 </style>
 
 | ID | Nome dell'Ambiente         | Descrizione                                                                                                                                                                                                                                                                                 |
