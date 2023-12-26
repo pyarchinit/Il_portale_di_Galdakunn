@@ -3,13 +3,11 @@
     background-color: black;
     color: white;
   }
-</style>
-
-<style>
 
   table {
     width: 100%;
     background-color: black;
+    color: white;
   }
 
   th, td {
@@ -19,7 +17,7 @@
   }
 
   th {
-    background-color: black;
+    background-color: white;
     color: black;
   }
 </style>
