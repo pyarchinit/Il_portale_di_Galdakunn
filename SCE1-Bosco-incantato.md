@@ -3,15 +3,10 @@
     background-color: black;
     color: white;
   }
-
-
 table {
     width: 100%;
-    background-color: transparent;
-    font-color: white;
+    background-color: red;
   }
-
-
 </style>
 
 | ID_AMBIENTE | AMBIENTE                    |
